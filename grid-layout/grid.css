@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222; /* 背景色をダークグレーに設定 */
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* 折り返しを有効にする */
+    width: 800px;
+    padding: 20px;
+    background-color: #333; /* コンテナの背景色 */
+    border-radius: 15px;
+  }
+  
+  .box {
+    flex: 1 1 18%; /* ボックスの大きさ（幅）を設定 */
+    margin: 10px; /* ボックス間の余白 */
+    height: 100px; /* ボックスの高さ */
+    background-color: #da49e8; /* デフォルトの背景色 */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px; /* 角を丸める */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ボックスの影 */
+  }
+  
+  .box:nth-child(odd) {
+    background-color: #c435d2; /* 奇数ボックスの背景色を変更 */
+  }
+  
